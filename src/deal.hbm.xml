@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name ="by.brashevets.entity.deal.Deal" table="event">
+		<id name ="id" column = "idEvent" type ="java.lang.Integer">
+			<generator class = "increment"/>
+		</id>
+		<!-- <property name ="readiness" column = "readiness" type="by.brashevets.entity.enums.Readiness"/>
+		<property name ="importance" column = "importance" type="by.brashevets.entity.enums.Importance"/> -->
+		<property name ="readiness" column = "readiness" type="java.lang.String"/>
+		<property name ="importance" column = "importance" type="java.lang.String"/>
+		<property name ="nameOfDeal" column = "name" type="java.lang.String"/>
+		<property name ="description" column = "description" type="java.lang.String"/>
+		<property name ="date" column = "date" type="java.lang.String"/>
+	</class>
+</hibernate-mapping>        

@@ -1,0 +1,602 @@
+19:30:35,808  INFO Environment:500 - Hibernate 3.2.1
+19:30:35,816  INFO Environment:533 - hibernate.properties not found
+19:30:35,816  INFO Environment:667 - Bytecode provider name : cglib
+19:30:35,816  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+19:30:35,876  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+19:30:35,876  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+20:35:17,040  INFO Environment:500 - Hibernate 3.2.1
+20:35:17,052  INFO Environment:533 - hibernate.properties not found
+20:35:17,053  INFO Environment:667 - Bytecode provider name : cglib
+20:35:17,053  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+20:35:17,098  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+20:35:17,113  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+20:35:19,663  INFO Configuration:553 - Reading mappings from resource : deal.hbm.xml
+20:35:21,641  INFO HbmBinder:300 - Mapping class: by.brashevets.entity.deal.Deal -> event
+20:35:21,658  INFO Configuration:1538 - Configured SessionFactory: null
+20:35:21,763  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+20:35:21,763  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+20:35:21,763  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+20:35:21,838  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/events
+20:35:21,838  INFO DriverManagerConnectionProvider:86 - connection properties: {user=root, password=****}
+20:35:23,173  INFO SettingsFactory:81 - RDBMS: MySQL, version: 5.5.24
+20:35:23,173  INFO SettingsFactory:82 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.14 ( $Date: 2006-10-18 17:40:15 +0200 (Wed, 18 Oct 2006) $, $Revision: 5888 $ )
+20:35:23,528  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+20:35:23,528  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+20:35:23,528  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+20:35:23,543  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+20:35:23,543  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+20:35:23,543  INFO SettingsFactory:145 - JDBC batch size: 15
+20:35:23,543  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+20:35:23,543  INFO SettingsFactory:153 - Scrollable result sets: enabled
+20:35:23,543  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+20:35:23,543  INFO SettingsFactory:169 - Connection release mode: auto
+20:35:23,543  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+20:35:23,543  INFO SettingsFactory:196 - Default batch fetch size: 1
+20:35:23,543  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+20:35:23,543  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+20:35:23,543  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+20:35:23,543  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+20:35:23,543  INFO SettingsFactory:212 - Query language substitutions: {}
+20:35:23,543  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+20:35:23,543  INFO SettingsFactory:222 - Second-level cache: enabled
+20:35:23,543  INFO SettingsFactory:226 - Query cache: disabled
+20:35:23,543  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+20:35:23,558  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+20:35:23,558  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+20:35:23,558  INFO SettingsFactory:277 - Statistics: disabled
+20:35:23,558  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+20:35:23,558  INFO SettingsFactory:296 - Default entity-mode: pojo
+20:35:23,648  INFO SessionFactoryImpl:161 - building session factory
+20:35:24,053  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+20:35:24,458 DEBUG StringType:80 - binding '2014-10-21' to parameter: 1
+20:35:24,503 DEBUG IntegerType:122 - returning '3' as column: idEvent0_
+20:35:24,563 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_
+20:35:24,563 DEBUG StringType:122 - returning 'Обычное' as column: importance0_
+20:35:24,563 DEBUG StringType:122 - returning 'jhgf' as column: name0_
+20:35:24,563 DEBUG StringType:122 - returning 'jhshfxcbxcvb' as column: descript5_0_
+20:35:24,578 DEBUG StringType:122 - returning '2014-10-21' as column: date0_
+20:35:24,578 DEBUG IntegerType:122 - returning '4' as column: idEvent0_
+20:35:24,578 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_
+20:35:24,578 DEBUG StringType:122 - returning 'Обычное' as column: importance0_
+20:35:24,578 DEBUG StringType:122 - returning 'eyery' as column: name0_
+20:35:24,578 DEBUG StringType:122 - returning 'eryu' as column: descript5_0_
+20:35:24,578 DEBUG StringType:122 - returning '2014-10-21' as column: date0_
+20:35:24,578 DEBUG IntegerType:122 - returning '5' as column: idEvent0_
+20:35:24,578 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_
+20:35:24,578 DEBUG StringType:122 - returning 'Обычное' as column: importance0_
+20:35:24,578 DEBUG StringType:122 - returning 'bmbcvnxqwrqqw' as column: name0_
+20:35:24,578 DEBUG StringType:122 - returning 'qwerq	wesfa' as column: descript5_0_
+20:35:24,593 DEBUG StringType:122 - returning '2014-10-21' as column: date0_
+20:35:24,593 DEBUG IntegerType:122 - returning '6' as column: idEvent0_
+20:35:24,593 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_
+20:35:24,593 DEBUG StringType:122 - returning 'Обычное' as column: importance0_
+20:35:24,593 DEBUG StringType:122 - returning 'qrqwjhxcb' as column: name0_
+20:35:24,608 DEBUG StringType:122 - returning 'dhdfxbxcbc' as column: descript5_0_
+20:35:24,608 DEBUG StringType:122 - returning '2014-10-21' as column: date0_
+20:35:24,608 DEBUG IntegerType:122 - returning '7' as column: idEvent0_
+20:35:24,608 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_
+20:35:24,608 DEBUG StringType:122 - returning 'Обычное' as column: importance0_
+20:35:24,608 DEBUG StringType:122 - returning 'sdgwetwertertqqw' as column: name0_
+20:35:24,608 DEBUG StringType:122 - returning 'mnbvc' as column: descript5_0_
+20:35:24,608 DEBUG StringType:122 - returning '2014-10-21' as column: date0_
+20:36:07,540  INFO Environment:500 - Hibernate 3.2.1
+20:36:07,548  INFO Environment:533 - hibernate.properties not found
+20:36:07,552  INFO Environment:667 - Bytecode provider name : cglib
+20:36:07,560  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+20:36:07,624  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+20:36:07,628  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+20:50:13,700  INFO Environment:500 - Hibernate 3.2.1
+20:50:13,710  INFO Environment:533 - hibernate.properties not found
+20:50:13,714  INFO Environment:667 - Bytecode provider name : cglib
+20:50:13,718  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+20:50:13,774  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+20:50:13,774  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+20:52:29,853  INFO Environment:500 - Hibernate 3.2.1
+20:52:29,867  INFO Environment:533 - hibernate.properties not found
+20:52:29,867  INFO Environment:667 - Bytecode provider name : cglib
+20:52:29,867  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+20:52:29,927  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+20:52:29,927  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:00:28,896  INFO Environment:500 - Hibernate 3.2.1
+21:00:28,908  INFO Environment:533 - hibernate.properties not found
+21:00:28,913  INFO Environment:667 - Bytecode provider name : cglib
+21:00:28,921  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+21:00:29,012  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+21:00:29,012  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:01:24,541  INFO Environment:500 - Hibernate 3.2.1
+21:01:24,549  INFO Environment:533 - hibernate.properties not found
+21:01:24,553  INFO Environment:667 - Bytecode provider name : cglib
+21:01:24,557  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+21:01:24,613  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+21:01:24,613  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:05:17,512  INFO Environment:500 - Hibernate 3.2.1
+21:05:17,519  INFO Environment:533 - hibernate.properties not found
+21:05:17,519  INFO Environment:667 - Bytecode provider name : cglib
+21:05:17,519  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+21:05:17,579  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+21:05:17,579  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:05:45,817  INFO Environment:500 - Hibernate 3.2.1
+21:05:45,833  INFO Environment:533 - hibernate.properties not found
+21:05:45,833  INFO Environment:667 - Bytecode provider name : cglib
+21:05:45,833  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+21:05:45,893  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+21:05:45,893  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:05:50,923  INFO Configuration:553 - Reading mappings from resource : deal.hbm.xml
+21:05:53,072  INFO HbmBinder:300 - Mapping class: by.brashevets.entity.deal.Deal -> event
+21:05:53,095  INFO Configuration:1538 - Configured SessionFactory: null
+21:05:53,227  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+21:05:53,231  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+21:05:53,231  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+21:05:53,247  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/events
+21:05:53,247  INFO DriverManagerConnectionProvider:86 - connection properties: {user=root, password=****}
+21:05:53,600  INFO SettingsFactory:81 - RDBMS: MySQL, version: 5.5.24
+21:05:53,600  INFO SettingsFactory:82 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.14 ( $Date: 2006-10-18 17:40:15 +0200 (Wed, 18 Oct 2006) $, $Revision: 5888 $ )
+21:05:53,636  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+21:05:53,644  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+21:05:53,648  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+21:05:53,648  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+21:05:53,648  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+21:05:53,648  INFO SettingsFactory:145 - JDBC batch size: 15
+21:05:53,652  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+21:05:53,652  INFO SettingsFactory:153 - Scrollable result sets: enabled
+21:05:53,656  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+21:05:53,656  INFO SettingsFactory:169 - Connection release mode: auto
+21:05:53,660  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+21:05:53,660  INFO SettingsFactory:196 - Default batch fetch size: 1
+21:05:53,660  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+21:05:53,660  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+21:05:53,664  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+21:05:53,668  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+21:05:53,668  INFO SettingsFactory:212 - Query language substitutions: {}
+21:05:53,668  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+21:05:53,672  INFO SettingsFactory:222 - Second-level cache: enabled
+21:05:53,672  INFO SettingsFactory:226 - Query cache: disabled
+21:05:53,672  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+21:05:53,672  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+21:05:53,676  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+21:05:53,684  INFO SettingsFactory:277 - Statistics: disabled
+21:05:53,684  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+21:05:53,684  INFO SettingsFactory:296 - Default entity-mode: pojo
+21:05:53,736  INFO SessionFactoryImpl:161 - building session factory
+21:05:53,992  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+21:05:54,048 DEBUG IntegerType:122 - returning '1' as column: idEvent0_0_
+21:05:54,056 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:05:54,056 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:05:54,056 DEBUG StringType:122 - returning 'asdf' as column: name0_0_
+21:05:54,056 DEBUG StringType:122 - returning 'asdf' as column: descript5_0_0_
+21:05:54,064 DEBUG StringType:122 - returning '2014-10-20' as column: date0_0_
+21:05:54,064 DEBUG IntegerType:122 - returning '2' as column: idEvent0_0_
+21:05:54,068 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:05:54,068 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:05:54,068 DEBUG StringType:122 - returning 'Миапр' as column: name0_0_
+21:05:54,068 DEBUG StringType:122 - returning 'ывафыва' as column: descript5_0_0_
+21:05:54,068 DEBUG StringType:122 - returning '2014-10-10' as column: date0_0_
+21:05:54,068 DEBUG IntegerType:122 - returning '3' as column: idEvent0_0_
+21:05:54,068 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:05:54,072 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:05:54,072 DEBUG StringType:122 - returning 'jhgf' as column: name0_0_
+21:05:54,072 DEBUG StringType:122 - returning 'jhshfxcbxcvb' as column: descript5_0_0_
+21:05:54,072 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:05:54,072 DEBUG IntegerType:122 - returning '4' as column: idEvent0_0_
+21:05:54,072 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:05:54,076 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:05:54,076 DEBUG StringType:122 - returning 'eyery' as column: name0_0_
+21:05:54,077 DEBUG StringType:122 - returning 'eryu' as column: descript5_0_0_
+21:05:54,077 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:05:54,077 DEBUG IntegerType:122 - returning '5' as column: idEvent0_0_
+21:05:54,077 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:05:54,077 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:05:54,077 DEBUG StringType:122 - returning 'bmbcvnxqwrqqw' as column: name0_0_
+21:05:54,081 DEBUG StringType:122 - returning 'qwerq	wesfa' as column: descript5_0_0_
+21:05:54,081 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:05:54,081 DEBUG IntegerType:122 - returning '6' as column: idEvent0_0_
+21:05:54,081 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:05:54,081 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:05:54,081 DEBUG StringType:122 - returning 'qrqwjhxcb' as column: name0_0_
+21:05:54,081 DEBUG StringType:122 - returning 'dhdfxbxcbc' as column: descript5_0_0_
+21:05:54,085 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:05:54,085 DEBUG IntegerType:122 - returning '7' as column: idEvent0_0_
+21:05:54,085 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:05:54,085 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:05:54,085 DEBUG StringType:122 - returning 'sdgwetwertertqqw' as column: name0_0_
+21:05:54,085 DEBUG StringType:122 - returning 'mnbvc' as column: descript5_0_0_
+21:05:54,085 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:08:15,162  INFO Environment:500 - Hibernate 3.2.1
+21:08:15,170  INFO Environment:533 - hibernate.properties not found
+21:08:15,174  INFO Environment:667 - Bytecode provider name : cglib
+21:08:15,178  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+21:08:15,230  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+21:08:15,234  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:08:17,830  INFO Configuration:553 - Reading mappings from resource : deal.hbm.xml
+21:08:19,923  INFO HbmBinder:300 - Mapping class: by.brashevets.entity.deal.Deal -> event
+21:08:19,941  INFO Configuration:1538 - Configured SessionFactory: null
+21:08:20,001  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+21:08:20,001  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+21:08:20,001  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+21:08:20,009  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/events
+21:08:20,009  INFO DriverManagerConnectionProvider:86 - connection properties: {user=root, password=****}
+21:08:20,185  INFO SettingsFactory:81 - RDBMS: MySQL, version: 5.5.24
+21:08:20,185  INFO SettingsFactory:82 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.14 ( $Date: 2006-10-18 17:40:15 +0200 (Wed, 18 Oct 2006) $, $Revision: 5888 $ )
+21:08:20,205  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+21:08:20,209  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+21:08:20,209  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+21:08:20,213  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+21:08:20,213  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+21:08:20,213  INFO SettingsFactory:145 - JDBC batch size: 15
+21:08:20,213  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+21:08:20,213  INFO SettingsFactory:153 - Scrollable result sets: enabled
+21:08:20,217  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+21:08:20,217  INFO SettingsFactory:169 - Connection release mode: auto
+21:08:20,217  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+21:08:20,217  INFO SettingsFactory:196 - Default batch fetch size: 1
+21:08:20,217  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+21:08:20,221  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+21:08:20,221  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+21:08:20,221  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+21:08:20,221  INFO SettingsFactory:212 - Query language substitutions: {}
+21:08:20,225  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+21:08:20,225  INFO SettingsFactory:222 - Second-level cache: enabled
+21:08:20,225  INFO SettingsFactory:226 - Query cache: disabled
+21:08:20,225  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+21:08:20,225  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+21:08:20,225  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+21:08:20,229  INFO SettingsFactory:277 - Statistics: disabled
+21:08:20,233  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+21:08:20,233  INFO SettingsFactory:296 - Default entity-mode: pojo
+21:08:20,261  INFO SessionFactoryImpl:161 - building session factory
+21:08:20,481  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+21:08:20,537 DEBUG IntegerType:122 - returning '1' as column: idEvent0_0_
+21:08:20,541 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:08:20,545 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:08:20,545 DEBUG StringType:122 - returning 'asdf' as column: name0_0_
+21:08:20,545 DEBUG StringType:122 - returning 'asdf' as column: descript5_0_0_
+21:08:20,553 DEBUG StringType:122 - returning '2014-10-20' as column: date0_0_
+21:08:20,553 DEBUG IntegerType:122 - returning '2' as column: idEvent0_0_
+21:08:20,553 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:08:20,553 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:08:20,553 DEBUG StringType:122 - returning 'Миапр' as column: name0_0_
+21:08:20,557 DEBUG StringType:122 - returning 'ывафыва' as column: descript5_0_0_
+21:08:20,557 DEBUG StringType:122 - returning '2014-10-10' as column: date0_0_
+21:08:20,557 DEBUG IntegerType:122 - returning '3' as column: idEvent0_0_
+21:08:20,557 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:08:20,561 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:08:20,561 DEBUG StringType:122 - returning 'jhgf' as column: name0_0_
+21:08:20,561 DEBUG StringType:122 - returning 'jhshfxcbxcvb' as column: descript5_0_0_
+21:08:20,561 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:08:20,561 DEBUG IntegerType:122 - returning '4' as column: idEvent0_0_
+21:08:20,565 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:08:20,565 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:08:20,565 DEBUG StringType:122 - returning 'eyery' as column: name0_0_
+21:08:20,565 DEBUG StringType:122 - returning 'eryu' as column: descript5_0_0_
+21:08:20,565 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:08:20,565 DEBUG IntegerType:122 - returning '5' as column: idEvent0_0_
+21:08:20,565 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:08:20,569 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:08:20,569 DEBUG StringType:122 - returning 'bmbcvnxqwrqqw' as column: name0_0_
+21:08:20,569 DEBUG StringType:122 - returning 'qwerq	wesfa' as column: descript5_0_0_
+21:08:20,569 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:08:20,569 DEBUG IntegerType:122 - returning '6' as column: idEvent0_0_
+21:08:20,569 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:08:20,569 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:08:20,569 DEBUG StringType:122 - returning 'qrqwjhxcb' as column: name0_0_
+21:08:20,573 DEBUG StringType:122 - returning 'dhdfxbxcbc' as column: descript5_0_0_
+21:08:20,573 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:08:20,573 DEBUG IntegerType:122 - returning '7' as column: idEvent0_0_
+21:08:20,573 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:08:20,573 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:08:20,573 DEBUG StringType:122 - returning 'sdgwetwertertqqw' as column: name0_0_
+21:08:20,573 DEBUG StringType:122 - returning 'mnbvc' as column: descript5_0_0_
+21:08:20,577 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:08:56,780  INFO Environment:500 - Hibernate 3.2.1
+21:08:56,797  INFO Environment:533 - hibernate.properties not found
+21:08:56,802  INFO Environment:667 - Bytecode provider name : cglib
+21:08:56,810  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+21:08:56,881  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+21:08:56,882  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:09:31,693  INFO Environment:500 - Hibernate 3.2.1
+21:09:31,700  INFO Environment:533 - hibernate.properties not found
+21:09:31,704  INFO Environment:667 - Bytecode provider name : cglib
+21:09:31,708  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+21:09:31,760  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+21:09:31,760  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:09:31,996  INFO Configuration:553 - Reading mappings from resource : deal.hbm.xml
+21:09:32,120  INFO HbmBinder:300 - Mapping class: by.brashevets.entity.deal.Deal -> event
+21:09:32,136  INFO Configuration:1538 - Configured SessionFactory: null
+21:09:32,192  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+21:09:32,192  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+21:09:32,192  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+21:09:32,200  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/events
+21:09:32,200  INFO DriverManagerConnectionProvider:86 - connection properties: {user=root, password=****}
+21:09:32,392  INFO SettingsFactory:81 - RDBMS: MySQL, version: 5.5.24
+21:09:32,392  INFO SettingsFactory:82 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.14 ( $Date: 2006-10-18 17:40:15 +0200 (Wed, 18 Oct 2006) $, $Revision: 5888 $ )
+21:09:32,412  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+21:09:32,416  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+21:09:32,420  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+21:09:32,420  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+21:09:32,420  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+21:09:32,420  INFO SettingsFactory:145 - JDBC batch size: 15
+21:09:32,420  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+21:09:32,424  INFO SettingsFactory:153 - Scrollable result sets: enabled
+21:09:32,424  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+21:09:32,424  INFO SettingsFactory:169 - Connection release mode: auto
+21:09:32,424  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+21:09:32,428  INFO SettingsFactory:196 - Default batch fetch size: 1
+21:09:32,428  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+21:09:32,428  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+21:09:32,428  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+21:09:32,432  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+21:09:32,432  INFO SettingsFactory:212 - Query language substitutions: {}
+21:09:32,432  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+21:09:32,432  INFO SettingsFactory:222 - Second-level cache: enabled
+21:09:32,432  INFO SettingsFactory:226 - Query cache: disabled
+21:09:32,432  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+21:09:32,432  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+21:09:32,436  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+21:09:32,440  INFO SettingsFactory:277 - Statistics: disabled
+21:09:32,440  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+21:09:32,440  INFO SettingsFactory:296 - Default entity-mode: pojo
+21:09:32,468  INFO SessionFactoryImpl:161 - building session factory
+21:09:32,700  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+21:09:32,755 DEBUG IntegerType:122 - returning '1' as column: idEvent0_0_
+21:09:32,763 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:09:32,763 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:09:32,763 DEBUG StringType:122 - returning 'asdf' as column: name0_0_
+21:09:32,763 DEBUG StringType:122 - returning 'asdf' as column: descript5_0_0_
+21:09:32,771 DEBUG StringType:122 - returning '2014-10-20' as column: date0_0_
+21:09:32,775 DEBUG IntegerType:122 - returning '2' as column: idEvent0_0_
+21:09:32,775 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:09:32,775 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:09:32,775 DEBUG StringType:122 - returning 'Миапр' as column: name0_0_
+21:09:32,775 DEBUG StringType:122 - returning 'ывафыва' as column: descript5_0_0_
+21:09:32,779 DEBUG StringType:122 - returning '2014-10-10' as column: date0_0_
+21:09:32,779 DEBUG IntegerType:122 - returning '3' as column: idEvent0_0_
+21:09:32,779 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:09:32,779 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:09:32,779 DEBUG StringType:122 - returning 'jhgf' as column: name0_0_
+21:09:32,779 DEBUG StringType:122 - returning 'jhshfxcbxcvb' as column: descript5_0_0_
+21:09:32,783 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:09:32,783 DEBUG IntegerType:122 - returning '4' as column: idEvent0_0_
+21:09:32,783 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:09:32,783 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:09:32,783 DEBUG StringType:122 - returning 'eyery' as column: name0_0_
+21:09:32,783 DEBUG StringType:122 - returning 'eryu' as column: descript5_0_0_
+21:09:32,783 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:09:32,783 DEBUG IntegerType:122 - returning '5' as column: idEvent0_0_
+21:09:32,787 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:09:32,787 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:09:32,787 DEBUG StringType:122 - returning 'bmbcvnxqwrqqw' as column: name0_0_
+21:09:32,787 DEBUG StringType:122 - returning 'qwerq	wesfa' as column: descript5_0_0_
+21:09:32,787 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:09:32,787 DEBUG IntegerType:122 - returning '6' as column: idEvent0_0_
+21:09:32,787 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:09:32,791 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:09:32,791 DEBUG StringType:122 - returning 'qrqwjhxcb' as column: name0_0_
+21:09:32,791 DEBUG StringType:122 - returning 'dhdfxbxcbc' as column: descript5_0_0_
+21:09:32,791 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:09:32,791 DEBUG IntegerType:122 - returning '7' as column: idEvent0_0_
+21:09:32,791 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:09:32,791 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:09:32,795 DEBUG StringType:122 - returning 'sdgwetwertertqqw' as column: name0_0_
+21:09:32,795 DEBUG StringType:122 - returning 'mnbvc' as column: descript5_0_0_
+21:09:32,795 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:16,221  INFO Environment:500 - Hibernate 3.2.1
+21:10:16,231  INFO Environment:533 - hibernate.properties not found
+21:10:16,239  INFO Environment:667 - Bytecode provider name : cglib
+21:10:16,247  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+21:10:16,339  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+21:10:16,343  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:10:16,627  INFO Configuration:553 - Reading mappings from resource : deal.hbm.xml
+21:10:16,743  INFO HbmBinder:300 - Mapping class: by.brashevets.entity.deal.Deal -> event
+21:10:16,755  INFO Configuration:1538 - Configured SessionFactory: null
+21:10:16,815  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+21:10:16,815  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+21:10:16,815  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+21:10:16,823  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/events
+21:10:16,823  INFO DriverManagerConnectionProvider:86 - connection properties: {user=root, password=****}
+21:10:17,015  INFO SettingsFactory:81 - RDBMS: MySQL, version: 5.5.24
+21:10:17,015  INFO SettingsFactory:82 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.14 ( $Date: 2006-10-18 17:40:15 +0200 (Wed, 18 Oct 2006) $, $Revision: 5888 $ )
+21:10:17,035  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+21:10:17,039  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+21:10:17,043  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+21:10:17,043  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+21:10:17,043  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+21:10:17,043  INFO SettingsFactory:145 - JDBC batch size: 15
+21:10:17,043  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+21:10:17,047  INFO SettingsFactory:153 - Scrollable result sets: enabled
+21:10:17,047  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+21:10:17,047  INFO SettingsFactory:169 - Connection release mode: auto
+21:10:17,047  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+21:10:17,047  INFO SettingsFactory:196 - Default batch fetch size: 1
+21:10:17,051  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+21:10:17,051  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+21:10:17,051  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+21:10:17,051  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+21:10:17,055  INFO SettingsFactory:212 - Query language substitutions: {}
+21:10:17,055  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+21:10:17,055  INFO SettingsFactory:222 - Second-level cache: enabled
+21:10:17,055  INFO SettingsFactory:226 - Query cache: disabled
+21:10:17,055  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+21:10:17,055  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+21:10:17,055  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+21:10:17,063  INFO SettingsFactory:277 - Statistics: disabled
+21:10:17,063  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+21:10:17,063  INFO SettingsFactory:296 - Default entity-mode: pojo
+21:10:17,091  INFO SessionFactoryImpl:161 - building session factory
+21:10:17,319  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+21:10:17,377 DEBUG IntegerType:122 - returning '1' as column: idEvent0_0_
+21:10:17,385 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:17,385 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:17,385 DEBUG StringType:122 - returning 'asdf' as column: name0_0_
+21:10:17,385 DEBUG StringType:122 - returning 'asdf' as column: descript5_0_0_
+21:10:17,393 DEBUG StringType:122 - returning '2014-10-20' as column: date0_0_
+21:10:17,393 DEBUG IntegerType:122 - returning '2' as column: idEvent0_0_
+21:10:17,393 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:17,397 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:17,397 DEBUG StringType:122 - returning 'Миапр' as column: name0_0_
+21:10:17,397 DEBUG StringType:122 - returning 'ывафыва' as column: descript5_0_0_
+21:10:17,397 DEBUG StringType:122 - returning '2014-10-10' as column: date0_0_
+21:10:17,397 DEBUG IntegerType:122 - returning '3' as column: idEvent0_0_
+21:10:17,401 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:17,401 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:17,401 DEBUG StringType:122 - returning 'jhgf' as column: name0_0_
+21:10:17,401 DEBUG StringType:122 - returning 'jhshfxcbxcvb' as column: descript5_0_0_
+21:10:17,401 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:17,401 DEBUG IntegerType:122 - returning '4' as column: idEvent0_0_
+21:10:17,405 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:17,405 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:17,405 DEBUG StringType:122 - returning 'eyery' as column: name0_0_
+21:10:17,405 DEBUG StringType:122 - returning 'eryu' as column: descript5_0_0_
+21:10:17,405 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:17,405 DEBUG IntegerType:122 - returning '5' as column: idEvent0_0_
+21:10:17,405 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:17,409 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:17,409 DEBUG StringType:122 - returning 'bmbcvnxqwrqqw' as column: name0_0_
+21:10:17,409 DEBUG StringType:122 - returning 'qwerq	wesfa' as column: descript5_0_0_
+21:10:17,409 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:17,409 DEBUG IntegerType:122 - returning '6' as column: idEvent0_0_
+21:10:17,409 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:17,409 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:17,413 DEBUG StringType:122 - returning 'qrqwjhxcb' as column: name0_0_
+21:10:17,413 DEBUG StringType:122 - returning 'dhdfxbxcbc' as column: descript5_0_0_
+21:10:17,413 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:17,413 DEBUG IntegerType:122 - returning '7' as column: idEvent0_0_
+21:10:17,413 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:17,413 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:17,413 DEBUG StringType:122 - returning 'sdgwetwertertqqw' as column: name0_0_
+21:10:17,413 DEBUG StringType:122 - returning 'mnbvc' as column: descript5_0_0_
+21:10:17,417 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:26,983 DEBUG StringType:80 - binding '2014-10-10' to parameter: 1
+21:10:26,988 DEBUG IntegerType:122 - returning '2' as column: idEvent0_
+21:10:26,988 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_
+21:10:26,988 DEBUG StringType:122 - returning 'Обычное' as column: importance0_
+21:10:26,988 DEBUG StringType:122 - returning 'Миапр' as column: name0_
+21:10:26,988 DEBUG StringType:122 - returning 'ывафыва' as column: descript5_0_
+21:10:26,992 DEBUG StringType:122 - returning '2014-10-10' as column: date0_
+21:10:32,321 DEBUG IntegerType:122 - returning '1' as column: idEvent0_0_
+21:10:32,321 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:32,325 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:32,326 DEBUG StringType:122 - returning 'asdf' as column: name0_0_
+21:10:32,326 DEBUG StringType:122 - returning 'asdf' as column: descript5_0_0_
+21:10:32,326 DEBUG StringType:122 - returning '2014-10-20' as column: date0_0_
+21:10:32,326 DEBUG IntegerType:122 - returning '2' as column: idEvent0_0_
+21:10:32,330 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:32,330 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:32,330 DEBUG StringType:122 - returning 'Миапр' as column: name0_0_
+21:10:32,330 DEBUG StringType:122 - returning 'ывафыва' as column: descript5_0_0_
+21:10:32,334 DEBUG StringType:122 - returning '2014-10-10' as column: date0_0_
+21:10:32,334 DEBUG IntegerType:122 - returning '3' as column: idEvent0_0_
+21:10:32,334 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:32,334 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:32,338 DEBUG StringType:122 - returning 'jhgf' as column: name0_0_
+21:10:32,338 DEBUG StringType:122 - returning 'jhshfxcbxcvb' as column: descript5_0_0_
+21:10:32,338 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:32,338 DEBUG IntegerType:122 - returning '4' as column: idEvent0_0_
+21:10:32,338 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:32,342 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:32,342 DEBUG StringType:122 - returning 'eyery' as column: name0_0_
+21:10:32,342 DEBUG StringType:122 - returning 'eryu' as column: descript5_0_0_
+21:10:32,342 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:32,346 DEBUG IntegerType:122 - returning '5' as column: idEvent0_0_
+21:10:32,346 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:32,346 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:32,346 DEBUG StringType:122 - returning 'bmbcvnxqwrqqw' as column: name0_0_
+21:10:32,350 DEBUG StringType:122 - returning 'qwerq	wesfa' as column: descript5_0_0_
+21:10:32,350 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:32,350 DEBUG IntegerType:122 - returning '6' as column: idEvent0_0_
+21:10:32,354 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:32,354 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:32,354 DEBUG StringType:122 - returning 'qrqwjhxcb' as column: name0_0_
+21:10:32,354 DEBUG StringType:122 - returning 'dhdfxbxcbc' as column: descript5_0_0_
+21:10:32,358 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:10:32,358 DEBUG IntegerType:122 - returning '7' as column: idEvent0_0_
+21:10:32,358 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:10:32,362 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:10:32,362 DEBUG StringType:122 - returning 'sdgwetwertertqqw' as column: name0_0_
+21:10:32,362 DEBUG StringType:122 - returning 'mnbvc' as column: descript5_0_0_
+21:10:32,362 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:12:10,480  INFO Environment:500 - Hibernate 3.2.1
+21:12:10,496  INFO Environment:533 - hibernate.properties not found
+21:12:10,500  INFO Environment:667 - Bytecode provider name : cglib
+21:12:10,508  INFO Environment:584 - using JDK 1.4 java.sql.Timestamp handling
+21:12:10,588  INFO Configuration:1423 - configuring from resource: /hibernate.cfg.xml
+21:12:10,588  INFO Configuration:1400 - Configuration resource: /hibernate.cfg.xml
+21:12:10,856  INFO Configuration:553 - Reading mappings from resource : deal.hbm.xml
+21:12:10,984  INFO HbmBinder:300 - Mapping class: by.brashevets.entity.deal.Deal -> event
+21:12:11,000  INFO Configuration:1538 - Configured SessionFactory: null
+21:12:11,060  INFO DriverManagerConnectionProvider:41 - Using Hibernate built-in connection pool (not for production use!)
+21:12:11,060  INFO DriverManagerConnectionProvider:42 - Hibernate connection pool size: 20
+21:12:11,060  INFO DriverManagerConnectionProvider:45 - autocommit mode: false
+21:12:11,068  INFO DriverManagerConnectionProvider:80 - using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/events
+21:12:11,068  INFO DriverManagerConnectionProvider:86 - connection properties: {user=root, password=****}
+21:12:11,280  INFO SettingsFactory:81 - RDBMS: MySQL, version: 5.5.24
+21:12:11,280  INFO SettingsFactory:82 - JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-3.1.14 ( $Date: 2006-10-18 17:40:15 +0200 (Wed, 18 Oct 2006) $, $Revision: 5888 $ )
+21:12:11,300  INFO Dialect:151 - Using dialect: org.hibernate.dialect.MySQLDialect
+21:12:11,308  INFO TransactionFactoryFactory:31 - Using default transaction strategy (direct JDBC transactions)
+21:12:11,308  INFO TransactionManagerLookupFactory:33 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+21:12:11,312  INFO SettingsFactory:134 - Automatic flush during beforeCompletion(): disabled
+21:12:11,312  INFO SettingsFactory:138 - Automatic session close at end of transaction: disabled
+21:12:11,312  INFO SettingsFactory:145 - JDBC batch size: 15
+21:12:11,312  INFO SettingsFactory:148 - JDBC batch updates for versioned data: disabled
+21:12:11,312  INFO SettingsFactory:153 - Scrollable result sets: enabled
+21:12:11,312  INFO SettingsFactory:161 - JDBC3 getGeneratedKeys(): enabled
+21:12:11,316  INFO SettingsFactory:169 - Connection release mode: auto
+21:12:11,316  INFO SettingsFactory:193 - Maximum outer join fetch depth: 2
+21:12:11,316  INFO SettingsFactory:196 - Default batch fetch size: 1
+21:12:11,316  INFO SettingsFactory:200 - Generate SQL with comments: disabled
+21:12:11,316  INFO SettingsFactory:204 - Order SQL updates by primary key: disabled
+21:12:11,316  INFO SettingsFactory:369 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+21:12:11,320  INFO ASTQueryTranslatorFactory:24 - Using ASTQueryTranslatorFactory
+21:12:11,320  INFO SettingsFactory:212 - Query language substitutions: {}
+21:12:11,320  INFO SettingsFactory:217 - JPA-QL strict compliance: disabled
+21:12:11,324  INFO SettingsFactory:222 - Second-level cache: enabled
+21:12:11,324  INFO SettingsFactory:226 - Query cache: disabled
+21:12:11,324  INFO SettingsFactory:356 - Cache provider: org.hibernate.cache.NoCacheProvider
+21:12:11,324  INFO SettingsFactory:241 - Optimize cache for minimal puts: disabled
+21:12:11,324  INFO SettingsFactory:250 - Structured second-level cache entries: disabled
+21:12:11,328  INFO SettingsFactory:277 - Statistics: disabled
+21:12:11,328  INFO SettingsFactory:281 - Deleted entity synthetic identifier rollback: disabled
+21:12:11,332  INFO SettingsFactory:296 - Default entity-mode: pojo
+21:12:11,360  INFO SessionFactoryImpl:161 - building session factory
+21:12:11,584  INFO SessionFactoryObjectFactory:82 - Not binding factory to JNDI, no JNDI name configured
+21:12:11,641 DEBUG IntegerType:122 - returning '1' as column: idEvent0_0_
+21:12:11,649 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:12:11,649 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:12:11,649 DEBUG StringType:122 - returning 'asdf' as column: name0_0_
+21:12:11,649 DEBUG StringType:122 - returning 'asdf' as column: descript5_0_0_
+21:12:11,657 DEBUG StringType:122 - returning '2014-10-20' as column: date0_0_
+21:12:11,657 DEBUG IntegerType:122 - returning '2' as column: idEvent0_0_
+21:12:11,661 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:12:11,661 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:12:11,661 DEBUG StringType:122 - returning 'Миапр' as column: name0_0_
+21:12:11,661 DEBUG StringType:122 - returning 'ывафыва' as column: descript5_0_0_
+21:12:11,661 DEBUG StringType:122 - returning '2014-10-10' as column: date0_0_
+21:12:11,661 DEBUG IntegerType:122 - returning '3' as column: idEvent0_0_
+21:12:11,665 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:12:11,665 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:12:11,665 DEBUG StringType:122 - returning 'jhgf' as column: name0_0_
+21:12:11,665 DEBUG StringType:122 - returning 'jhshfxcbxcvb' as column: descript5_0_0_
+21:12:11,665 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:12:11,665 DEBUG IntegerType:122 - returning '4' as column: idEvent0_0_
+21:12:11,665 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:12:11,669 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:12:11,669 DEBUG StringType:122 - returning 'eyery' as column: name0_0_
+21:12:11,669 DEBUG StringType:122 - returning 'eryu' as column: descript5_0_0_
+21:12:11,669 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:12:11,669 DEBUG IntegerType:122 - returning '5' as column: idEvent0_0_
+21:12:11,669 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:12:11,669 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:12:11,673 DEBUG StringType:122 - returning 'bmbcvnxqwrqqw' as column: name0_0_
+21:12:11,673 DEBUG StringType:122 - returning 'qwerq	wesfa' as column: descript5_0_0_
+21:12:11,673 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:12:11,673 DEBUG IntegerType:122 - returning '6' as column: idEvent0_0_
+21:12:11,673 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:12:11,673 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:12:11,677 DEBUG StringType:122 - returning 'qrqwjhxcb' as column: name0_0_
+21:12:11,677 DEBUG StringType:122 - returning 'dhdfxbxcbc' as column: descript5_0_0_
+21:12:11,677 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
+21:12:11,677 DEBUG IntegerType:122 - returning '7' as column: idEvent0_0_
+21:12:11,677 DEBUG StringType:122 - returning 'Не готово' as column: readiness0_0_
+21:12:11,677 DEBUG StringType:122 - returning 'Обычное' as column: importance0_0_
+21:12:11,677 DEBUG StringType:122 - returning 'sdgwetwertertqqw' as column: name0_0_
+21:12:11,681 DEBUG StringType:122 - returning 'mnbvc' as column: descript5_0_0_
+21:12:11,681 DEBUG StringType:122 - returning '2014-10-21' as column: date0_0_
