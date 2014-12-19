@@ -7,16 +7,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-import by.brashevets.entity.enums.Importance;
-import by.brashevets.entity.enums.Readiness;
 
 @Entity
 @Table(name = "events")
-//
-//SELECT * FROM events.event where name = 'asdf' and description = 'asdf';
 public class Deal implements Serializable{
 
 	/**
@@ -27,10 +22,6 @@ public class Deal implements Serializable{
 	@Column(name = "idEvent")
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
-	// @Column(name = "readiness")
-	// private Readiness readiness;
-	// @Column(name = "importance")
-	// private Importance importance;
 	@Column(name = "readiness")
 	private String readiness;
 	@Column(name = "importance")
@@ -58,18 +49,6 @@ public class Deal implements Serializable{
 		this.importance = importance;
 	}
 
-	// public Readiness getReadiness() {
-	// return readiness;
-	// }
-	// public void setReadiness(Readiness readiness) {
-	// this.readiness = readiness;
-	// }
-	// public Importance getImportance() {
-	// return importance;
-	// }
-	// public void setImportance(Importance importance) {
-	// this.importance = importance;
-	// }
 	public String getNameOfDeal() {
 		return nameOfDeal;
 	}

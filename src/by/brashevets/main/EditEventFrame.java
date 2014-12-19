@@ -18,18 +18,14 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerDateModel;
 
 import java.sql.SQLException;
-import java.sql.Time;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Calendar;
-import java.util.List;
 
 import by.brashevets.dao.DealDao;
 import by.brashevets.entity.deal.Deal;
-import by.brashevets.entity.enums.Importance;
-import by.brashevets.entity.enums.Readiness;
 import by.brashevets.factory.Factory;
 
 import com.toedter.calendar.JDateChooser;
@@ -41,16 +37,21 @@ import java.awt.event.ActionEvent;
 
 public class EditEventFrame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textFieldName;
 	private JSpinner spinnerTime;
-	private JComboBox comboBoxImportance;
+	private JComboBox<Object> comboBoxImportance;
 	private JDateChooser dateChooser;
 	private JButton buttonEditEvent;
 	private JTextPane textPane;
 	private Deal currentDeal;
 	private MainFrame calendarFrame;
 	private JButton btnDeleteEvent;
+	private EditEventFrame editEventFrame;
 
 	/**
 	 * Launch the application.
@@ -61,6 +62,7 @@ public class EditEventFrame extends JFrame {
 	 */
 	public EditEventFrame(final Deal currentDeal) {
 		this.currentDeal = currentDeal; 
+		editEventFrame = this;
 		setTitle("\u0420\u0435\u0434\u0430\u043A\u0442\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435 \u0441\u043E\u0431\u044B\u0442\u0438\u044F");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 401, 387);
@@ -75,8 +77,8 @@ public class EditEventFrame extends JFrame {
 		scrollPane.setViewportView(textPane);
 		textPane.setText(currentDeal.getDescription());
 		
-		comboBoxImportance = new JComboBox();
-		comboBoxImportance.setModel(new DefaultComboBoxModel(new String[] {"\u041E\u0447\u0435\u043D\u044C \u0432\u0430\u0436\u043D\u043E\u0435", "\u0412\u0430\u0436\u043D\u043E\u0435", "\u041E\u0431\u044B\u0447\u043D\u043E\u0435"}));
+		comboBoxImportance = new JComboBox<Object>();
+		comboBoxImportance.setModel(new DefaultComboBoxModel<Object>(new String[] {"\u041E\u0447\u0435\u043D\u044C \u0432\u0430\u0436\u043D\u043E\u0435", "\u0412\u0430\u0436\u043D\u043E\u0435", "\u041E\u0431\u044B\u0447\u043D\u043E\u0435"}));
 		for(int i = 0; i < comboBoxImportance.getItemCount(); i++ ){
 			if(comboBoxImportance.getItemAt(i).equals(currentDeal.getImportance())){
 				comboBoxImportance.setSelectedIndex(i);
@@ -116,29 +118,15 @@ public class EditEventFrame extends JFrame {
 		buttonEditEvent = new JButton("\u0421\u043E\u0445\u0440\u0430\u043D\u0438\u0442\u044C \u0438\u0437\u043C\u0435\u043D\u0435\u043D\u0438\u044F");
 		buttonEditEvent.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-//				Deal deal = null;
-//				try{
-					String nameOfDeal = textFieldName.getText();
-					String description = textPane.getText();
-					Date date = dateChooser.getDate();
-					Date timeDate = (Date)spinnerTime.getValue();
-					String importance = (String)comboBoxImportance.getSelectedItem();
-					String readiness = "Не готово";
-					
-					java.util.Date utilDate = date;
-				    java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
-				    Date date1 = ((SpinnerDateModel) spinnerTime.getModel()).getDate();
-				    Time beginTime = new Time(((SpinnerDateModel) spinnerTime.getModel()).getDate().getTime());
-				    Time startTime = new Time(((SpinnerDateModel) spinnerTime.getModel()).getDate().getTime());
-				    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-				    currentDeal.setDate(dateFormat.format(date));
-				    currentDeal.setNameOfDeal(nameOfDeal);
-					currentDeal.setDescription(description);
-					currentDeal.setImportance(importance);
-					currentDeal.setReadiness(readiness);
 					Factory factory = Factory.getInstance();
 					DealDao dealDao = factory.getDealDao();
 					try {
+						Date date = dateChooser.getDate();
+					    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+					    currentDeal.setDate(dateFormat.format(date));
+						currentDeal.setDescription(textPane.getText());
+						currentDeal.setNameOfDeal(textFieldName.getText());
+						currentDeal.setImportance((String)comboBoxImportance.getSelectedItem());
 						dealDao.updateDeal(currentDeal);
 						JOptionPane.showMessageDialog(null,"Событие успешно обновлено",	"Уведомление", 1);
 					} catch (SQLException e1) {
@@ -148,6 +136,19 @@ public class EditEventFrame extends JFrame {
 		});
 		
 		btnDeleteEvent = new JButton("\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0441\u043E\u0431\u044B\u0442\u0438\u0435");
+		btnDeleteEvent.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Factory factory = Factory.getInstance();
+				DealDao dealDao = factory.getDealDao();
+				try {
+					dealDao.deleteDeal(currentDeal);
+					editEventFrame.dispose();
+					JOptionPane.showMessageDialog(null,"Событие успешно удалено",	"Уведомление", 1);
+				} catch (SQLException e1) {
+					e1.printStackTrace();
+				}			
+			}
+		});
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.TRAILING)

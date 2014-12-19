@@ -6,17 +6,17 @@ import by.brashevets.dao.implementation.DealDaoImpl;
 public class Factory {
 	public static Factory instance = new Factory();
 	public DealDao dealDao;
-	
-	private Factory(){
-		
+
+	private Factory() {
+
 	}
-	
-	public static Factory getInstance(){
+
+	public static Factory getInstance() {
 		return Factory.instance;
 	}
-	
-	public DealDao getDealDao(){
-		if(dealDao ==  null){
+
+	public DealDao getDealDao() {
+		if (dealDao == null) {
 			dealDao = new DealDaoImpl();
 		}
 		return dealDao;

@@ -18,19 +18,13 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerDateModel;
 
 import java.sql.SQLException;
-import java.sql.Time;
 import java.text.DateFormat;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Calendar;
-import java.util.List;
-import java.util.Locale;
 
 import by.brashevets.dao.DealDao;
 import by.brashevets.entity.deal.Deal;
-import by.brashevets.entity.enums.Importance;
-import by.brashevets.entity.enums.Readiness;
 import by.brashevets.factory.Factory;
 
 import com.toedter.calendar.JDateChooser;
@@ -42,10 +36,14 @@ import java.awt.event.ActionEvent;
 
 public class NewEventFrame extends JFrame {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField textFieldName;
 	private JSpinner spinnerTime;
-	private JComboBox comboBoxImportance;
+	private JComboBox<Object> comboBoxImportance;
 	private JDateChooser dateChooser;
 	private JButton buttonAddEvent;
 	private JTextPane textPane;
@@ -91,8 +89,8 @@ public class NewEventFrame extends JFrame {
 		textPane = new JTextPane();
 		scrollPane.setViewportView(textPane);
 		
-		comboBoxImportance = new JComboBox();
-		comboBoxImportance.setModel(new DefaultComboBoxModel(new String[] {"\u041E\u0447\u0435\u043D\u044C \u0432\u0430\u0436\u043D\u043E\u0435", "\u0412\u0430\u0436\u043D\u043E\u0435", "\u041E\u0431\u044B\u0447\u043D\u043E\u0435"}));
+		comboBoxImportance = new JComboBox<Object>();
+		comboBoxImportance.setModel(new DefaultComboBoxModel<Object>(new String[] {"\u041E\u0447\u0435\u043D\u044C \u0432\u0430\u0436\u043D\u043E\u0435", "\u0412\u0430\u0436\u043D\u043E\u0435", "\u041E\u0431\u044B\u0447\u043D\u043E\u0435"}));
 		comboBoxImportance.setSelectedIndex(2);
 		
 		JLabel lblNewLabel = new JLabel("\u0421\u0442\u0435\u043F\u0435\u043D\u044C \u0432\u0430\u0436\u043D\u043E\u0441\u0442\u0438:");
@@ -113,38 +111,19 @@ public class NewEventFrame extends JFrame {
 		
 		dateChooser = new JDateChooser();
 		dateChooser.setDateFormatString("yyyy-MM-dd");
-//		String dateString = new Date()//currentDeal.getDate();
-//		Date date = null;
-//		try {
-//			date = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH).parse(dateString);
-//		} catch (ParseException e2) {
-//			// TODO Auto-generated catch block
-//			e2.printStackTrace();
-//		}
-//		dateChooser.setDate(date);
 		dateChooser.setDate(new Date());
 
 		buttonAddEvent = new JButton("\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0441\u043E\u0431\u044B\u0442\u0438\u0435");
 		buttonAddEvent.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Deal deal = null;
 				try{
 					String nameOfDeal = textFieldName.getText();
 					String description = textPane.getText();
 					Date date = dateChooser.getDate();
-					Date timeDate = (Date)spinnerTime.getValue();
-					//Importance importance = Importance.USUAL;
 					String importance = (String)comboBoxImportance.getSelectedItem();
 					currentDeal = new Deal();
-					//Readiness readiness = Readiness.NOT_READY;
 					String readiness = "Не готово";
 					
-					java.util.Date utilDate = date;
-				    java.sql.Date sqlDate = new java.sql.Date(utilDate.getTime());
-				    Date date1 = ((SpinnerDateModel) spinnerTime.getModel()).getDate();
-				    Time beginTime = new Time(((SpinnerDateModel) spinnerTime.getModel()).getDate().getTime());
-				    Time startTime = new Time(((SpinnerDateModel) spinnerTime.getModel()).getDate().getTime());
-				    System.out.println(startTime);
 				    DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 				    currentDeal.setDate(dateFormat.format(date));
 				    currentDeal.setNameOfDeal(nameOfDeal);
@@ -158,18 +137,14 @@ public class NewEventFrame extends JFrame {
 					try {
 						dealDao.addDeal(currentDeal);
 					} catch (SQLException e1) {
-						// TODO Auto-generated catch block
 						e1.printStackTrace();
 					}
 					dispose();
-					JOptionPane.showMessageDialog(null, "Новое дело " + currentDeal.getNameOfDeal()+ "успешно добавлено на " + currentDeal.getDate()+"." ,
+					JOptionPane.showMessageDialog(null, "Новое событие " + currentDeal.getNameOfDeal()+ " успешно добавлено на " + currentDeal.getDate()+"." ,
 							"Уведомление", 1);
 				}finally{
 					
-				}//catch(Exception e1){
-					
-				//}
-//				System.out.println(currentDeal);
+				}
 				
 			}
 		});

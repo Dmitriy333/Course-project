@@ -3,8 +3,6 @@ package by.brashevets.dao.implementation;
 import java.sql.SQLException;
 import java.util.List;
 
-import javax.persistence.NamedQuery;
-
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -108,6 +106,7 @@ public class DealDaoImpl implements DealDao{
 		return deal;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Deal> getDeals() throws SQLException {
 		List<Deal> deals = null;
@@ -124,6 +123,7 @@ public class DealDaoImpl implements DealDao{
 		}
 		return deals;
 	}
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Deal> getDealByDate(String date) throws SQLException {
 		List<Deal> deals = null;
